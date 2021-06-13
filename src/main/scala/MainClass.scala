@@ -1,4 +1,3 @@
-import scala.collection.mutable.ListBuffer
 import scala.language.postfixOps
 import scala.util.Random
 

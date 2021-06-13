@@ -1,6 +1,8 @@
 import scala.collection.mutable.ListBuffer
 import scala.language.postfixOps
 
+case class Node(var fruit: Fruit = null, var left :Node =null , var right: Node = null)
+
 case class BinarySearchTree(var root: Node = null){
 
   //Delegation

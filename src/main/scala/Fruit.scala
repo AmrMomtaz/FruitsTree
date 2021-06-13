@@ -8,9 +8,9 @@ abstract class Fruit(){
 // Fruits Properties
 trait Size
 
-trait Large extends Size
-trait Medium extends Size
 trait Tiny extends Size
+trait Medium extends Size
+trait Large extends Size
 
 
 trait Color
