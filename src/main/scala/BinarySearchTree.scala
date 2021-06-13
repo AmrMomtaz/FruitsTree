@@ -46,7 +46,7 @@ case class BinarySearchTree(var root: Node = null){
      list
   }
 
-  def filterByType(Type : Any): ListBuffer[Fruit] ={
+  def filterByType(Type : AnyRef): ListBuffer[Fruit] ={
     val inOrderList = this.Iterate(print = false)
     //Higher Order function
     val filterFunction = (fruit:Fruit) => fruit.getClass().toString().substring(6).equals(Type.toString())
@@ -64,7 +64,7 @@ case class BinarySearchTree(var root: Node = null){
     newList
   }
 
-  def magnifyByType(Type : Any,Weight : Int): ListBuffer[Fruit] ={
+  def magnifyByType(Type : AnyRef,Weight : Int): ListBuffer[Fruit] ={
     val inOrderList = this.Iterate(print = false)
     //Higher order function
     val magnifyFunction = (fruit:Fruit) => {
