@@ -1,8 +1,7 @@
 abstract class Fruit(){
   var weight : Int
-  val kind : String
   def describe: Unit ={
-    println("Fruit Type : " + kind +  " , Weight = " + weight + " gram")
+    println("Fruit Type : Abstract Fruit , Weight = " + weight + " gram")
   }
 }
 
@@ -31,62 +30,102 @@ trait Circular extends Shape
 
 //Available Fruits
 case class Apple(override var weight : Int) extends Fruit() with Medium with Red with Circular {
-  override val kind: String = "Apple"
+  override def describe: Unit = {
+    println("Fruit Type : Apple , Weight = " + weight + " gram")
+  }
 }
 case class Avocado(override var weight : Int) extends Fruit() with Medium with Green with Oval{
-  override val kind: String = "Avocado"
+  override def describe: Unit = {
+    println("Fruit Type : Avocado , Weight = " + weight + " gram")
+  }
 }
 case class Banana(override var weight : Int) extends Fruit() with Medium with Yellow with Oval{
-  override val kind: String = "Banana"
+  override def describe: Unit = {
+    println("Fruit Type : Banana , Weight = " + weight + " gram")
+  }
 }
 case class Blackberries(override var weight : Int) extends Fruit() with Tiny with Black with Circular{
-  override val kind: String = "Blackberries"
+  override def describe: Unit = {
+    println("Fruit Type : Blackberries , Weight = " + weight + " gram")
+  }
 }
 case class Blueberries(override var weight : Int) extends Fruit() with Tiny with Blue with Circular{
-  override val kind: String = "Blueberries"
+  override def describe: Unit = {
+    println("Fruit Type : Blueberries , Weight = " + weight + " gram")
+  }
 }
 case class Cherries(override var weight : Int) extends Fruit() with Tiny with Red with Circular{
-  override val kind: String = "Cherries"
+  override def describe: Unit = {
+    println("Fruit Type : Cherries , Weight = " + weight + " gram")
+  }
 }
 case class Coconut(override var weight : Int) extends Fruit() with Large with Brown with Circular{
-  override val kind: String = "Coconut"
+  override def describe: Unit = {
+    println("Fruit Type : Coconut , Weight = " + weight + " gram")
+  }
 }
 case class Clementine(override var weight : Int) extends Fruit() with Medium with Orange with Circular{
-  override val kind: String = "Clementine"
+  override def describe: Unit = {
+    println("Fruit Type : Clementine , Weight = " + weight + " gram")
+  }
 }
 case class Guava(override var weight : Int) extends Fruit() with Medium with Yellow with Oval{
-  override val kind: String = "Guava"
+  override def describe: Unit = {
+    println("Fruit Type : Guava , Weight = " + weight + " gram")
+  }
 }
 case class Kiwi(override var weight : Int) extends Fruit() with Tiny with Brown with Circular{
-  override val kind: String = "Kiwi"
+  override def describe: Unit = {
+    println("Fruit Type : Kiwi , Weight = " + weight + " gram")
+  }
 }
 case class Lemon(override var weight : Int) extends Fruit() with Tiny with Yellow with Circular{
-  override val kind: String = "Lemon"
+  override def describe: Unit = {
+    println("Fruit Type : Lemon , Weight = " + weight + " gram")
+  }
 }
 case class Mango(override var weight : Int) extends Fruit() with Medium with Green with Oval{
-  override val kind: String = "Mango"
+  override def describe: Unit = {
+    println("Fruit Type : Mango , Weight = " + weight + " gram")
+  }
 }
 case class Mandarin(override var weight : Int) extends Fruit() with Medium with Orange with Circular{
-  override val kind: String = "Mandarin"
+  override def describe: Unit = {
+    println("Fruit Type : Mandarin , Weight = " + weight + " gram")
+  }
 }
 case class Peaches(override var weight : Int) extends Fruit() with Medium with Brown with Circular{
-  override val kind: String = "Peaches"
+  override def describe: Unit = {
+    println("Fruit Type : Peaches , Weight = " + weight + " gram")
+  }
 }
 case class Pear(override var weight : Int) extends Fruit() with Medium with Green with Oval{
-  override val kind: String = "Pear"
+  override def describe: Unit = {
+    println("Fruit Type : Pear , Weight = " + weight + " gram")
+  }
 }
 case class Pineapple(override var weight : Int) extends Fruit() with Large with Yellow with Oval{
-  override val kind: String = "Pineapple"
+  override def describe: Unit = {
+    println("Fruit Type : Pineapple , Weight = " + weight + " gram")
+  }
 }
 case class Pomegranate(override var weight : Int) extends Fruit() with Large with Red with Circular{
-  override val kind: String = "Pomegranate"
+  override def describe: Unit = {
+    println("Fruit Type : Pomegranate , Weight = " + weight + " gram")
+  }
 }
 case class Strawberries(override var weight : Int) extends Fruit() with Tiny with Red with Oval{
-  override val kind: String = "Strawberries"
+  override def describe: Unit = {
+    println("Fruit Type : Strawberries , Weight = " + weight + " gram")
+  }
 }
 case class Tangerine(override var weight : Int) extends Fruit() with Medium with Orange with Circular{
-  override val kind: String = "Tangerine"
+  override def describe: Unit = {
+    println("Fruit Type : Tangerine , Weight = " + weight + " gram")
+  }
 }
 case class Watermelon(override var weight : Int) extends Fruit() with Large with Green with Circular{
-  override val kind: String = "Watermelon"
+  override def describe: Unit = {
+    println("Fruit Type : Watermelon , Weight = " + weight + " gram")
+  }
 }
